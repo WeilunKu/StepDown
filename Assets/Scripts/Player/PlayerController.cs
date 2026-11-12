@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
     
 // Component
     PlayerMovement move;
+    
+    GameObject currPlatform;
 
 // === Life Cycle === //
     void Awake()
@@ -18,4 +20,20 @@ public class PlayerController : MonoBehaviour
         move.Movement();
     }
 
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Platform"))
+            currPlatform = other.gameObject;
+        
+        
+        if (other.gameObject.CompareTag("Ceiling"))
+        {
+            BoxCollider2D platformCollider 
+                = currPlatform.GetComponent<BoxCollider2D>();
+
+            platformCollider.enabled = false;
+            
+            print("Collision Ceiling");
+        }
+    }
 }
