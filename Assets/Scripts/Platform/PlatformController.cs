@@ -2,15 +2,14 @@ using UnityEngine;
 
 public class PlatformController : MonoBehaviour
 {
-// PlatformController
-
-// Awake
+    // Components
     PlatformRise rise;
 
-// Inspector
+    // Inspector Values
     [SerializeField] float destroyTime = 5f;
 
-// === Life Cycle === //
+    
+    // === Life Cycle === //
     void Awake()
     {
         rise = GetComponent<PlatformRise>();

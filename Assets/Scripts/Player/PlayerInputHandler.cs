@@ -3,18 +3,18 @@ using UnityEngine.InputSystem;
 
 public class PlayerInputHandler : MonoBehaviour
 {
-// PlayerInputHandler
-
-// Components
+    // Components
     PlayerMovement movement;
 
-// === Life Cycle === //
+    
+    // === Life Cycle === //
     void Awake()
     {
         movement = GetComponent<PlayerMovement>();
     }
 
-// === Enable API === //
+    
+    // === Enable API === //
     public void OnMove(InputAction.CallbackContext ctx)
     {
         Vector2 dir = ctx.ReadValue<Vector2>();
