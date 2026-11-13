@@ -6,8 +6,12 @@ public class PlatformController : MonoBehaviour
     PlatformRise rise;
 
     // Inspector Values
+    [Header("Destroy Object")]
     [SerializeField] float destroyTime = 5f;
+    [Space]
 
+    [SerializeField] Vector3 destroyPosition;
+    
     
     // === Life Cycle === //
     void Awake()
@@ -23,6 +27,17 @@ public class PlatformController : MonoBehaviour
     void Update()
     {
         rise.Rising();
+        DestroyAtPosition();
     }
-
+    
+    
+    // === Method === \\
+    void DestroyAtPosition()
+    {
+        float currHeight = gameObject.transform.position.y;
+        float targetHeight = destroyPosition.y;
+        
+        if (currHeight >= targetHeight)
+            Destroy(gameObject);
+    }
 }
