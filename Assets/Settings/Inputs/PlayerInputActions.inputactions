@@ -53,7 +53,7 @@
                 {
                     "name": "left",
                     "id": "7d4ca018-260b-476c-a13d-c17caa5e2839",
-                    "path": "",
+                    "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -64,7 +64,7 @@
                 {
                     "name": "right",
                     "id": "31b57f38-3f8e-4121-8310-40ae0e1de7ea",
-                    "path": "",
+                    "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -108,7 +108,7 @@
                 {
                     "name": "left",
                     "id": "63faedd4-a402-46a1-9c90-b81bf9da569d",
-                    "path": "",
+                    "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -119,7 +119,7 @@
                 {
                     "name": "right",
                     "id": "b97ae6d8-0397-4592-80c8-e8c7d1eabc6b",
-                    "path": "",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -163,7 +163,7 @@
                 {
                     "name": "left",
                     "id": "b18fa4a1-bbfd-49c1-8cfb-05c2911d50ba",
-                    "path": "",
+                    "path": "<Gamepad>/leftStick/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -174,7 +174,7 @@
                 {
                     "name": "right",
                     "id": "dac39d2c-f56f-4cda-8cde-527d11bd29b7",
-                    "path": "",
+                    "path": "<Gamepad>/leftStick/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -218,7 +218,7 @@
                 {
                     "name": "left",
                     "id": "f20c86c9-6e8d-4f2b-89f7-02d1c4fb584a",
-                    "path": "",
+                    "path": "<Gamepad>/dpad/left",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -229,7 +229,7 @@
                 {
                     "name": "right",
                     "id": "79dfdbad-147b-4adf-b111-43754da187b1",
-                    "path": "",
+                    "path": "<Gamepad>/dpad/right",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
