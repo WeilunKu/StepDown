@@ -7,8 +7,10 @@ public class PlayerController : MonoBehaviour
     Destroyer destroyer;
     
     // Private Values
-    GameObject currPlatform;
+    public GameObject currPlatform;
 
+    public GameObject[] hpBar;
+    public int currHp, maxHp;
     
     // === Life Cycle === //
     void Awake()
@@ -17,6 +19,12 @@ public class PlayerController : MonoBehaviour
         destroyer = GetComponent<Destroyer>();
     }
 
+    void Start()
+    {
+        currHp = hpBar.Length;
+        maxHp = hpBar.Length;
+    }
+    
     void Update()
     {
         destroyer.DestroyAtHeight(isPositive: false);
@@ -30,10 +38,6 @@ public class PlayerController : MonoBehaviour
     
     void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Platform"))
-            currPlatform = other.gameObject;
-        
-        
         if (other.gameObject.CompareTag("Ceiling"))
         {
             BoxCollider2D platformCollider 
