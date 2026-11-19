@@ -4,22 +4,30 @@ public class PlayerController : MonoBehaviour
 {
     // Components
     PlayerMovement move;
+    Destroyer destroyer;
     
     // Private Values
     GameObject currPlatform;
-    
+
     
     // === Life Cycle === //
     void Awake()
     {
         move = GetComponent<PlayerMovement>();
+        destroyer = GetComponent<Destroyer>();
     }
 
+    void Update()
+    {
+        destroyer.DestroyAtHeight(isPositive: false);
+    }
+    
     void FixedUpdate()
     {
         move.Movement();
     }
-
+    
+    
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Platform"))
@@ -36,4 +44,5 @@ public class PlayerController : MonoBehaviour
             print("Collision Ceiling");
         }
     }
+
 }
