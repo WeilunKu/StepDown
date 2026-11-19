@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 121776871}
   - component: {fileID: 121776873}
   - component: {fileID: 121776872}
+  - component: {fileID: 121776874}
   m_Layer: 0
   m_Name: Platform
   m_TagString: Platform
@@ -225,8 +226,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eac3cdda03bae8a4f8e7625d807b4592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformController
-  destroyTime: 37.8
-  destroyPosition: {x: 0, y: 6, z: 0}
+--- !u!114 &121776874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 121776869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9cf62a5b8e00b4d924cc84af2c7c61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destroyer
+  destroyTime: 7
+  destroyPositonY: 7
 --- !u!1 &284094496
 GameObject:
   m_ObjectHideFlags: 0
@@ -242,6 +255,7 @@ GameObject:
   - component: {fileID: 284094503}
   - component: {fileID: 284094499}
   - component: {fileID: 284094502}
+  - component: {fileID: 284094505}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -421,6 +435,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 0.87985474}
   m_EdgeRadius: 0
+--- !u!114 &284094505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 284094496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e9cf62a5b8e00b4d924cc84af2c7c61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Destroyer
+  destroyTime: 0
+  destroyPositonY: -7
 --- !u!1 &364435749
 GameObject:
   m_ObjectHideFlags: 0
