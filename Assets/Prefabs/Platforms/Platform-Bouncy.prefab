@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 5698912380793882456}
   - component: {fileID: 3137624051336718466}
   - component: {fileID: 1268912531482489109}
+  - component: {fileID: -4117392568754302988}
   - component: {fileID: 132182926148489899}
   m_Layer: 0
   m_Name: Platform-Bouncy
@@ -197,7 +198,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a6249f5e7717042b793f7776ecfc67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformRise
-  speed: 5
+  speed: 3
+--- !u!114 &-4117392568754302988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8067459826174740894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69099481a62d52c4f8166077ad3c5c61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Platform_Bouncy
 --- !u!114 &132182926148489899
 MonoBehaviour:
   m_ObjectHideFlags: 0

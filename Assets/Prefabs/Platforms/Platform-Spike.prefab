@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a6249f5e7717042b793f7776ecfc67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlatformRise
-  speed: 5
+  speed: 3
 --- !u!114 &132182926148489899
 MonoBehaviour:
   m_ObjectHideFlags: 0

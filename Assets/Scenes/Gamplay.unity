@@ -270,8 +270,8 @@ GameObject:
   - component: {fileID: 284094502}
   - component: {fileID: 284094506}
   - component: {fileID: 284094507}
-  - component: {fileID: 284094505}
   - component: {fileID: 284094508}
+  - component: {fileID: 284094505}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -406,7 +406,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   currPlatform: {fileID: 0}
-  hpBar: []
+  hpBar:
+  - {fileID: 909929552}
+  - {fileID: 577431702}
+  - {fileID: 1019408513}
   currHp: 0
   maxHp: 0
 --- !u!61 &284094504
@@ -481,7 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae20a423df518de4f9acd54204ea90f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
-  speed: 1
+  speed: 7
 --- !u!114 &284094507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -812,6 +815,11 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &577431702 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9179411144150229948, guid: 6694ecb81d6544a4f8d62fb2504b4def, type: 3}
+  m_PrefabInstance: {fileID: 1324986354}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &584661317
 GameObject:
   m_ObjectHideFlags: 0
@@ -907,6 +915,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4553717553802599606, guid: 793a72ad64a1fa84387f6d172c84964a, type: 3}
   m_PrefabInstance: {fileID: 604021715}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &909929552 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9179411144150229948, guid: 6694ecb81d6544a4f8d62fb2504b4def, type: 3}
+  m_PrefabInstance: {fileID: 6924870102258144239}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &909929553 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4492852524259812126, guid: 6694ecb81d6544a4f8d62fb2504b4def, type: 3}
@@ -946,6 +959,11 @@ Transform:
   - {fileID: 1597867663}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1019408513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9179411144150229948, guid: 6694ecb81d6544a4f8d62fb2504b4def, type: 3}
+  m_PrefabInstance: {fileID: 1597867662}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1112198021
 PrefabInstance:
   m_ObjectHideFlags: 0
